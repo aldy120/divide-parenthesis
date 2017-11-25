@@ -15,6 +15,7 @@ Take a look when we go through a parenthesis, if we go through a "(", the number
 We need to only count the number of ")" since we have to decrease it, and finally stop when the number of "(" in the left part is equal to the number of ")" in the right part.
 
 # Pseudo Code
+```py
 r: the number of ")" in S
 l: 0
 for each index i in S: 
@@ -23,6 +24,6 @@ for each index i in S:
     increase l
   if S[i] is ")":
     decrease r
-
+```
 # Why the solution exist?
 because the relative distance of r and l is finite, and is decrease by 1 each step, it must go down to zero.
